@@ -1,0 +1,13 @@
+#buttonArea{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.content{
+    margin-top: 10px;
+    margin-left: 50vh;
+    width: 40%;
+}
