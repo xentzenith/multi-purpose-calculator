@@ -4,17 +4,18 @@ This is a simple calculator implemented using HTML, CSS, and JavaScript.
 
 ## Features
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Percentage calculations
+- High speed calculations
 - Error handling for invalid expressions
-- Keyboard support (Added on March 19 2024)
+- Keyboard support
 
 ## Planned Features
 - Scientific calculator features
 - Styling improvements
+- Multi-Operand Block (eg. 2++2 User will able to change the second operand to 3 without clearing the whole expression)
+
+## Change Log
+- March 19 2024
+  - Added keyboard support
 
 ## Usage
 
