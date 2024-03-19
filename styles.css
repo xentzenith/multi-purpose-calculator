@@ -6,6 +6,10 @@
     grid-row-gap: 3px;
 }
 
+button:focus{
+    background-color: #c0a5a5;
+}
+
 .content{
     margin-top: 10px;
     margin-left: 50vh;
