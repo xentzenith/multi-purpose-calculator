@@ -1,17 +1,33 @@
-#buttonArea{
+
+#buttonArea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
-button:focus{
+button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:focus {
+    outline: none;
     background-color: #c0a5a5;
 }
 
-.content{
-    margin-top: 10px;
-    margin-left: 50vh;
-    width: 40%;
+.content {
+    margin: 10vh auto;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }

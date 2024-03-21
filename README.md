@@ -10,10 +10,11 @@ This is a simple calculator implemented using HTML, CSS, and JavaScript.
 
 ## Planned Features
 - Scientific calculator features
-- Styling improvements
-- Multi-Operand Block (eg. 2++2 User will able to change the second operand to 3 without clearing the whole expression)
 
 ## Change Log
+- March 21 2024
+  - Added styling improvements
+  - Added multi-operand anti-block (eg. 2+/2 User will able to change operand without clearing the whole expression)
 - March 19 2024
   - Added keyboard support
 

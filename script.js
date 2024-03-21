@@ -1,4 +1,5 @@
 var dp = document.getElementById('displayArea');
+var lastCharIsOperator = false;
 
 function reset() {
     dp.value = '';
@@ -9,8 +10,21 @@ function bck() {
 }
 
 function add(value) {
-    if(dp.value == 'ERR') reset();
-    dp.value += value;
+    if(dp.value === 'ERR') {
+        dp.value = '';
+    };
+
+    if (value === '+' || value === '-' || value === '*' || value === '/') {
+        if (lastCharIsOperator) {
+            dp.value = dp.value.substring(0, dp.value.length - 1) + value;
+        } else {
+            dp.value += value;
+            lastCharIsOperator = true;
+        }
+    } else {
+        dp.value += value;
+        lastCharIsOperator = false;
+    }
 }
 
 function calculate() {
@@ -45,9 +59,9 @@ document.addEventListener('keydown', function(event) {
             simulateButtonClick('+');
         } else if (key === '-') {
             simulateButtonClick('-');
-        }else if (key.toLowerCase() === 'r' || key.toLowerCase() === 'c'){
+        } else if (key.toLowerCase() === 'r' || key.toLowerCase() === 'c') {
             simulateButtonClick('RESET');
-        }else {
+        } else {
             simulateButtonClick(key);
         }
     }
