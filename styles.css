@@ -1,33 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1f21 0%, #c3cfe2 100%);
+    margin: 0;
+}
+
+.content {
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+#displayArea {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid #888;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
 
 #buttonArea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    gap: 10px;
+    padding-left: 20px;
 }
 
 button {
-    background-color: #e0e0e0;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1.2em;
+    background-color: #E0E0E0;
+    color: #000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s;
 }
 
-button:focus {
-    outline: none;
-    background-color: #c0a5a5;
+button:hover {
+    background-color: #D3D3D3;
 }
 
-.content {
-    margin: 10vh auto;
-    width: 50%;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+button:active {
+    background-color: #B0B0B0;
+}
+
+button:nth-child(4n) {
+    background-color: #FF9500;
+    color: #fff;
+}
+
+button:nth-child(4n):hover {
+    background-color: #E58C00;
+}
+
+button:nth-child(4n):active {
+    background-color: #CC7A00;
+}
+
+/* Media query for tablet and mobile devices */
+@media (max-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .content {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    #displayArea {
+        height: 80px;
+        font-size: 2.5em;
+    }
+    
+    #buttonArea {
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    button {
+        height: 70px;
+        font-size: 1.2em;
+    }
 }
