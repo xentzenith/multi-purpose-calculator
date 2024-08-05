@@ -12,6 +12,10 @@ This is a simple calculator implemented using HTML, CSS, and JavaScript.
 - Scientific calculator features
 
 ## Change Log
+- August 8 2024
+  - Added responsive design for mobile and tablet devices
+  - Improved display area to show the end of the text when it becomes longer
+  - Updated display area to use a dot matrix type font
 - March 21 2024
   - Added styling improvements
   - Added multi-operand anti-block (eg. 2+/2 User will able to change operand without clearing the whole expression)
